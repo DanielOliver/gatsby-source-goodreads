@@ -1,4 +1,5 @@
 const axios = require(`axios`)
+const parseString = require('xml2js').parseString;
 
 exports.sourceNodes = async ({
   boundActionCreators,
@@ -24,13 +25,17 @@ exports.sourceNodes = async ({
     }
   }
 
-  var shelfList = await axios(options)
-
   // Do the initial fetch
   console.time(`fetch goodreads data`)
   console.log(
     `starting to fetch data from goodreads`
   )
+  
+  var shelfListXml = await axios(options)
+
+  parseString(shelfListXml, function (err, result) {
+    console.log(result)
+  })
 
   return
 }
