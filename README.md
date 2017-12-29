@@ -22,6 +22,8 @@ module.exports = {
 ## Plugin options
 
 * **developerKey**: Use your [Goodreads developer API key](https://www.goodreads.com/api/keys)
+* **goodReadsUserId**: The Goodreads user ID of the user to get data for.
+* **userShelf**: _OPTIONAL_. read, currently-reading, to-read, etc.
 
 ## How to query your Goodread data using GraphQL
 
