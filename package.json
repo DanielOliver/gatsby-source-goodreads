@@ -1,11 +1,12 @@
 {
   "name": "gatsby-plugin-goodreads",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "description": "Get the public books from a shelf in Goodreads for use in Gatsby.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DanielOliver/gatsby-plugin-goodreads.git"
   },
+  "bundleDependencies": false,
   "keywords": [
     "goodreads",
     "gatsby",
