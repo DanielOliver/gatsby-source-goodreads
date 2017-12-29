@@ -1,4 +1,4 @@
-# gatsby-plugin-goodreads
+# gatsby-source-goodreads
 
 Source plugin for pulling your read books into Gatsby from Goodreads API.
 
@@ -8,7 +8,7 @@ Source plugin for pulling your read books into Gatsby from Goodreads API.
 module.exports = {
   plugins: [
     {
-      resolve: "gatsby-plugin-goodreads",
+      resolve: "gatsby-source-goodreads",
       options: {
         developerKey: "IAmDeveloperKey",
         goodReadsUserId: "IAmGoodreadsUserId",
