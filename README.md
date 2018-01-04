@@ -30,33 +30,32 @@ module.exports = {
 Below is a sample query for fetching the shelf's books. 
 
 ```graphql
-query shelfList {
-  allGoodreadsShelf {
-    edges {
-      node {
-        id
-        shelfName
-        reviews {
-          reviewID
-          rating
-          votes
-          spoilerFlag
-          spoilersState
-          dateAdded
-          dateUpdated
-          book {
-            bookID
-            textReviewsCount
-            isbn
-            isbn13
-            uri
-            title
-            titleWithoutSeries
-          }
-        }
+query goodRead {
+  goodreadsShelf {
+    id
+    shelfName
+    reviews {
+      reviewID
+      rating
+      votes
+      spoilerFlag
+      dateAdded
+      dateUpdated
+      book {
+        bookID
+        isbn
+        isbn13
+        textReviewsCount
+        uri
+        link
+        title
+        titleWithoutSeries
+        imageUrl
+        smallImageUrl
+        largeImageUrl
+        description
       }
     }
   }
 }
-
 ```
