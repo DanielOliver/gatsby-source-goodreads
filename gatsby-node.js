@@ -62,6 +62,7 @@ exports.sourceNodes = async ({
           spoilersState: element['spoilers_state'][0],
           dateAdded: element['date_added'][0],
           dateUpdated: element['spoilers_state'][0],
+          body: element['body'][0],
           book: {
             bookID: bookElement['id'][0]._,
             isbn: isbnValue,
