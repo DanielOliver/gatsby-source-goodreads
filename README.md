@@ -41,6 +41,7 @@ query goodRead {
       spoilerFlag
       dateAdded
       dateUpdated
+      body
       book {
         bookID
         isbn
